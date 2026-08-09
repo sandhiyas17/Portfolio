@@ -1,0 +1,1088 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #3fd5df;
+}
+
+.top-contact {
+    color: white;
+    text-decoration: none;
+
+    background: #555;
+
+    padding: 11px 35px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 12px #777;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    min-height: 390px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 11%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.home-content {
+    width: 55%;
+}
+
+.home-content > p:first-child {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    font-size: 43px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.home-description {
+    color: #888;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    max-width: 480px;
+
+    margin-bottom: 22px;
+}
+
+.contact-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    background: #36c9d2;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+.contact-btn span {
+    background: white;
+
+    color: #36c9d2;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* PERSON */
+
+.person {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+.person img {
+    width: 280px;
+    max-width: 100%;
+}
+
+
+/* ================= TITLE ================= */
+
+.title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.title span {
+    display: block;
+
+    width: 70px;
+
+    border-bottom: 2px dotted #555;
+
+    margin: 7px auto;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    min-height: 420px;
+
+    padding: 40px 10%;
+}
+
+.about-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.shapes {
+    width: 40%;
+    height: 280px;
+
+    position: relative;
+}
+
+.shape-one {
+    position: absolute;
+
+    top: 0;
+    left: 40px;
+
+    font-size: 70px;
+
+    color: #777;
+
+    transform: rotate(25deg);
+}
+
+.cube {
+    position: absolute;
+
+    top: 80px;
+    left: 20px;
+
+    font-size: 45px;
+
+    line-height: 0.7;
+
+    color: #777;
+
+    transform: rotate(20deg);
+}
+
+.shape-three {
+    position: absolute;
+
+    bottom: 10px;
+    left: 110px;
+
+    color: #777;
+
+    font-size: 60px;
+}
+
+.about-text {
+    width: 53%;
+
+    position: relative;
+
+    padding: 30px;
+}
+
+.about-text p {
+    color: #999;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    max-width: 450px;
+}
+
+.quote-left,
+.quote-right {
+    position: absolute;
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+.quote-left {
+    top: -5px;
+    left: 0;
+}
+
+.quote-right {
+    bottom: -25px;
+    right: 0;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills {
+    padding: 30px 10% 80px;
+}
+
+.skill-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 145px);
+
+    justify-content: center;
+
+    gap: 35px 75px;
+}
+
+
+/* CARD */
+
+.skill-card {
+    width: 145px;
+    height: 220px;
+
+    border: 2px solid #777;
+
+    border-radius: 7px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* NUMBER */
+
+.number {
+    position: absolute;
+
+    left: -38px;
+    top: 65px;
+
+    font-size: 65px;
+
+    color: black;
+
+    -webkit-text-stroke: 1px white;
+}
+
+
+/* CORNER */
+
+.corner {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    width: 30px;
+    height: 30px;
+
+    background: #444;
+
+    border-radius:
+        0 5px 0 25px;
+}
+
+
+/* LOGOS */
+
+.html-logo,
+.css-logo {
+    width: 50px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: white;
+
+    margin-bottom: 30px;
+}
+
+.html-logo {
+    background: #e44d26;
+}
+
+.css-logo {
+    background: #1572b6;
+}
+
+.js-logo {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f0db19;
+
+    color: black;
+
+    font-weight: bold;
+
+    margin-bottom: 40px;
+}
+
+.react-logo {
+    color: #00d8ff;
+
+    font-size: 50px;
+
+    margin-bottom: 30px;
+}
+
+.node-logo {
+    color: #54a84f;
+
+    font-size: 22px;
+
+    margin-bottom: 40px;
+}
+
+.mongo-logo {
+    color: #54a84f;
+
+    font-size: 40px;
+
+    margin-bottom: 30px;
+}
+
+
+/* SKILL NAME */
+
+.skill-name {
+    background: #55518a;
+
+    padding: 6px 12px;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+}
+
+
+/* OTHER */
+
+.other {
+    min-height: 300px;
+
+    text-align: center;
+
+    padding-top: 100px;
+}
+
+.other h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+/* ================================================= */
+/*                    MEDIA QUERY                    */
+/* ================================================= */
+
+
+/* ---------- TABLET ---------- */
+
+@media screen and (max-width: 900px) {
+
+    header {
+        padding: 0 4%;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .top-contact {
+        padding: 9px 22px;
+    }
+
+    .home {
+        padding: 30px 7%;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home-description {
+        max-width: 400px;
+    }
+
+    .person img {
+        width: 240px;
+    }
+
+    .skill-container {
+        gap: 35px 50px;
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media screen and (max-width: 650px) {
+
+    /* NAVBAR */
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .top-contact {
+        padding: 8px 25px;
+    }
+
+
+    /* HOME */
+
+    .home {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 20px;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home-description {
+        width: 100%;
+
+        font-size: 13px;
+    }
+
+    .person {
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .person img {
+        width: 220px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        padding: 50px 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .shapes {
+        width: 100%;
+
+        height: 220px;
+    }
+
+    .about-text {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 13px;
+    }
+
+
+    /* SKILLS */
+
+    .skills {
+        padding: 40px 20px 70px;
+    }
+
+    .skill-container {
+        grid-template-columns: repeat(2, 135px);
+
+        gap: 40px 45px;
+    }
+
+    .skill-card {
+        width: 135px;
+        height: 210px;
+    }
+
+    .number {
+        font-size: 55px;
+
+        left: -32px;
+    }
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media screen and (max-width: 400px) {
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .skill-container {
+        grid-template-columns: 135px;
+
+        gap: 35px;
+    }
+
+    .about-text {
+        padding: 25px 10px;
+    }
+}
+
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 72px;
+    height: 1px;
+    background: #777;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.project-section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto 0;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 65px;
+}
+
+
+/* Project Image */
+
+.project-image {
+    width: 200px;
+    height: 130px;
+
+    flex-shrink: 0;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071a2b,
+            #0b3b5d,
+            #10263b
+        );
+
+    box-shadow:
+        0 10px 20px rgba(0, 80, 130, 0.35),
+        inset 0 0 20px rgba(0, 100, 160, 0.15);
+
+    border: 1px solid #18354d;
+
+    transform: perspective(500px) rotateY(-3deg);
+}
+
+.project-image h3 {
+    font-size: 16px;
+    color: white;
+}
+
+
+/* Project Content */
+
+.project-content {
+    flex: 1;
+}
+
+.project-content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #ccc;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+
+/* Project Link */
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    background: white;
+    color: black;
+
+    text-decoration: none;
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.project-link i {
+    font-size: 10px;
+}
+.project-link {
+    color: #8b80ff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.project-link:hover {
+    color: white;
+    text-decoration: none;
+}
+.project-content a {
+    color: #8b80ff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.project-content a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-section {
+    width: 85%;
+    max-width: 900px;
+    margin: 70px auto 0;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 30px;
+}
+
+.education-item {
+    text-align: center;
+}
+
+
+/* Circular Progress */
+
+.circle {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    margin-bottom: 25px;
+}
+
+
+/* Inner black circle */
+
+.circle::before {
+    content: "";
+
+    position: absolute;
+
+    width: 82px;
+    height: 82px;
+
+    background: #000;
+
+    border-radius: 50%;
+}
+
+
+/* Percentage text */
+
+.circle span {
+    position: relative;
+    z-index: 2;
+
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Progress values */
+
+.progress-80 {
+    background: conic-gradient(
+        white 0deg 288deg,
+        transparent 288deg 360deg
+    );
+}
+
+.progress-87 {
+    background: conic-gradient(
+        white 0deg 313.2deg,
+        transparent 313.2deg 360deg
+    );
+}
+
+.progress-90 {
+    background: conic-gradient(
+        white 0deg 324deg,
+        transparent 324deg 360deg
+    );
+}
+
+
+.education-item h3 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #ddd;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    width: 85%;
+    max-width: 900px;
+
+    margin: 70px auto 80px;
+}
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 65px 100px;
+
+    justify-items: center;
+}
+
+
+/* Contact Circle */
+
+.contact-card {
+    width: 115px;
+    height: 115px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    background: radial-gradient(
+        circle at center,
+        #101010,
+        #050505
+    );
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Bottom glow */
+
+.contact-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 55px;
+
+    bottom: -20px;
+
+    border-radius: 50%;
+
+    filter: blur(8px);
+}
+
+
+/* Hand */
+
+.hand {
+    width: 65px;
+    height: 35px;
+
+    border-radius: 50% 50% 45% 45%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 2;
+
+    transform: rotate(-5deg);
+}
+
+.hand i {
+    font-size: 22px;
+}
+
+
+/* LinkedIn */
+
+.linkedin::after {
+    background: #1599df;
+}
+
+.linkedin .hand {
+    background: #1599df;
+}
+
+.linkedin i {
+    color: white;
+}
+
+
+/* Github */
+
+.github::after {
+    background: #a8df20;
+}
+
+.github .hand {
+    background: #a8df20;
+}
+
+.github i {
+    color: #111;
+}
+
+
+/* X */
+
+.twitter::after {
+    background: #13d8d8;
+}
+
+.twitter .hand {
+    background: #13d8d8;
+}
+
+.twitter i {
+    color: #111;
+}
+
+
+/* Gmail */
+
+.gmail::after {
+    background: #20df62;
+}
+
+.gmail .hand {
+    background: #20df62;
+}
+
+.gmail i {
+    color: white;
+}
+
+
+/* Instagram */
+
+.instagram::after {
+    background: #d51de1;
+}
+
+.instagram .hand {
+    background: #d51de1;
+}
+
+.instagram i {
+    color: white;
+}
+
+
+/* Facebook */
+
+.facebook::after {
+    background: #168ce0;
+}
+
+.facebook .hand {
+    background: #168ce0;
+}
+
+.facebook i {
+    color: white;
+}
